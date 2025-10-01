@@ -1,0 +1,22 @@
+h1 {
+    font-family: Bungee Spice;
+    background-color: blue;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+#Primeiroparagrafo{
+    background-color: green;
+}
+
+.Paragrafo{
+    background-color: yellow;
+}
+
+p[draggable="true"]{
+    background-color: gray;
+}
+p[draggable="false"]{
+    background-color: cyan;
+}
