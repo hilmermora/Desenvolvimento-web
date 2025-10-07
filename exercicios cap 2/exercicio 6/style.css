@@ -1,0 +1,29 @@
+.box-um{
+    height: 230px;
+    width: 220px;
+}
+div.box-dois{
+    
+    padding: 20x;
+    border: 10px solid black;
+    background-color: cadetblue;
+}
+div.box{
+    margin-left: 23%;
+    border: 10px solid black;
+    top: 20px;
+    bottom: 30px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(252, 188, 68, 0.939);    
+    position: r;
+}
+div.bod{
+    border: 10px solid black;
+    top: 20px;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    background-color: brown;
+    
+}
