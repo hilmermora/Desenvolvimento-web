@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(182, 241, 127);
+    text-align: center;
+}
+#container{
+    max-width: 900px;
+    margin: auto;
+
+}
+
+.cartaoum {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top; 
+    margin: 10px;
+    bottom:auto;
+  }
+.cartaodois {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top; 
+    margin: 10px;
+    bottom:auto ;
+  }
+.cartaotres {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top; 
+    margin: 10px;
+    bottom: auto;
+  }
+
+.fotoum{
+    width: 100%;
+    border-radius: 10px;
+}
+.fotodois{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.fototres{
+    width: 100%;
+    border-radius: 10px;
+
+}

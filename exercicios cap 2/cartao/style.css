@@ -1,0 +1,46 @@
+body{
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color:black;
+    text-transform: uppercase;
+    font-size: 32px;
+
+}
+
+.cartao{
+    background-color: white;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px ;
+    box-shadow: 0 0 10px ;
+}
+.foto{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid;
+    margin-bottom: 15px;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: aqua;
+    color: rgb(148, 31, 31);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3;
+
+
+}
+
+a:hover{
+    background-color: bisque;
+}
