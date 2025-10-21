@@ -1,0 +1,15 @@
+h1,h2{
+    color:blueviolet;
+
+}
+
+div > p{
+    color:firebrick;
+}
+
+ul li{
+    color: blue;
+}
+ul > .done{
+    color:seagreen;
+}

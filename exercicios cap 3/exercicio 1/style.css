@@ -1,0 +1,22 @@
+
+.box {
+    background-color: blue;
+    padding: 10px;
+  }
+  
+  p {
+    color: rgb(211, 211, 71);
+    margin: 0;
+    padding: 0;
+  }
+
+.white-text{
+    background-color: red;
+    padding: 10px;
+}
+
+#outer-box{
+    border: 10px solid purple;
+}
+
+
