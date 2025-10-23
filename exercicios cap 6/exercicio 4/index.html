@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* Cores */
+    /* 
+    Gap (linhas): #000
+    Fundo branco: #F0F1EC
+    Vermelho: #E72F24
+    Preto: #232629
+    Azul: #004592
+    Amarelo: #F9D01E
+    */
+
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #F0F1EC;
+      width: 748px;
+      height: 748px;
+      display: grid;
+      gap: 9px; /* conforme indicado na imagem */
+      grid-template-columns: 320px 414px; /* 320 + 9 + 414 = 743 (mais borda preta compensa) */
+      grid-template-rows: 414px 155px 130px 20px;
+    }
+
+    /* Quadrados e retângulos */
+    .red {
+      background-color: #E72F24;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .white1 {
+      background-color: #F0F1EC;
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .white2 {
+      background-color: #F0F1EC;
+      grid-column: 1;
+      grid-row: 2 / 4;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-column: 2;
+      grid-row: 2;
+      height: 130px;
+      border-bottom: 10px solid #000; /* conforme imagem */
+    }
+
+    .white3 {
+      background-color: #F0F1EC;
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-column: 1;
+      grid-row: 4;
+      width: 198px;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-column: 1 / span 2;
+      grid-row: 4;
+      justify-self: end;
+      width: 153px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="blue"></div>
+    <div class="white3"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
+</body>
+</html>
