@@ -15,71 +15,70 @@
     Amarelo: #F9D01E
     */
 
+   
     body {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    .container {
-      background-color: #F0F1EC;
-      width: 748px;
-      height: 748px;
-      display: grid;
-      gap: 9px; /* conforme indicado na imagem */
-      grid-template-columns: 320px 414px; /* 320 + 9 + 414 = 743 (mais borda preta compensa) */
-      grid-template-rows: 414px 155px 130px 20px;
-    }
+.container {
+  display: grid;
+  width: 748px;
+  height: 748px;
+  background-color: #000; /* Linhas pretas */
+  gap: 9px; /* Espaço entre os blocos */
+  grid-template-columns: 320px 198px 153px;
+  grid-template-rows: 414px 155px 130px 20px;
+}
 
-    /* Quadrados e retângulos */
-    .red {
-      background-color: #E72F24;
-      grid-column: 1;
-      grid-row: 1;
-    }
+/* Blocos coloridos */
 
-    .white1 {
-      background-color: #F0F1EC;
-      grid-column: 2;
-      grid-row: 1;
-    }
+.red {
+  background-color: #E72F24;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
 
-    .white2 {
-      background-color: #F0F1EC;
-      grid-column: 1;
-      grid-row: 2 / 4;
-    }
+.white1 {
+  background-color: #F0F1EC;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
 
-    .blue {
-      background-color: #004592;
-      grid-column: 2;
-      grid-row: 2;
-      height: 130px;
-      border-bottom: 10px solid #000; /* conforme imagem */
-    }
+.white2 {
+  background-color: #F0F1EC;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
 
-    .white3 {
-      background-color: #F0F1EC;
-      grid-column: 2;
-      grid-row: 3;
-    }
+.blue {
+  background-color: #004592;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  border-bottom: 10px solid #000;
+}
 
-    .yellow {
-      background-color: #F9D01E;
-      grid-column: 1;
-      grid-row: 4;
-      width: 198px;
-    }
+.white3 {
+  background-color: #F0F1EC;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
 
-    .black {
-      background-color: #232629;
-      grid-column: 1 / span 2;
-      grid-row: 4;
-      justify-self: end;
-      width: 153px;
-    }
+.yellow {
+  background-color: #F9D01E;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.black {
+  background-color: #232629;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
   </style>
 </head>
 <body>
