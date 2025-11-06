@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplos de Layout Responsivo</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #ddd;
+    padding: 10px;
+  }
+
+  .col {
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+  }
+
+ 
+  .col-50 {
+    flex: 0 0 50%;
+  }
+
+  .col-33 {
+    flex: 0 0 33.33%;
+  }
+
+  
+  @media (max-width: 768px) {
+    .col-50, .col-33 {
+      flex: 0 0 100%;
+    }
+  }
+
+  
+  .ex1 .col { background-color: seagreen; }
+  .ex2 .col { background-color: purple; border: 2px solid gold; }
+  .ex3 .col { background-color: tomato; }
+  .ex3b .col { background-color: cadetblue; }
+  .ex4 .col { background-color: royalblue; }
+  .ex4b .col { background-color: darkslategray; }
+</style>
+</head>
+<body>
+
+<div class="row ex1">
+  <div class="col col-12">50% desktop, 100% mobile</div>
+  <div class="col col-12">50% desktop, 100% mobile</div>
+</div>
+
+
+<div class="row ex2">
+  <div class="col col-12">50% desktop, 100% mobile</div>
+  <div class="col col-12">50% desktop, 100% mobile</div>
+</div>
+
+
+<div class="row ex3">
+  <div class="col col-12">Coluna 1</div>
+  <div class="col col-12">Coluna 2</div>
+  <div class="col col-12">Coluna 3</div>
+</div>
+
+<!-- Exemplo 3 - versão empilhada -->
+<div class="row ex3b">
+  <div class="col col-12">Coluna 1</div>
+  <div class="col col-12">Coluna 2</div>
+  <div class="col col-12">Coluna 3</div>
+</div>
+
+<!-- Exemplo 4: 2 colunas desktop / 1 coluna mobile -->
+<div class="row ex4">
+  <div class="col col-12">Coluna 1</div>
+  <div class="col col-12">Coluna 2</div>
+</div>
+
+<!-- Exemplo 4 - versão empilhada -->
+<div class="row ex4b">
+  <div class="col col-12">Coluna 1</div>
+  <div class="col col-12">Coluna 2</div>
+</div>
+
+</body>
+</html>
